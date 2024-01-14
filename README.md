@@ -3,8 +3,7 @@ All Credits go to King Macking he is the creator of the script!
 https://github.com/KingMacking/esx_burgershot
 
 # Important
-If you are not using the any/the burgershot MLO that I've linked below you will need to change the coords in the config.lua and client.lua file or you'll find this script to be pretty useless. 👍
-And if you are not using the Taco Van you will need to change the config.lua
+Unless you're using the "any/the burgershot" MLO I linked below, you'll need to change the coordinates in the "config.lua" and "client.lua" files, otherwise this script is pretty much useless. 👍 And if you don't use Taco Van, you need to change the config.lua
 ## Requirements
 - [esx_basicneeds](https://github.com/ESX-Org/esx_basicneeds)
 - [esx_jobs](https://github.com/ESX-Org/esx_jobs)
