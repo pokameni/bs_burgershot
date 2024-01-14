@@ -211,7 +211,6 @@ AddEventHandler('bs_burgershotjob:craftingCoktails', function(Value)
         elseif gammaQuantity < 1 then
             TriggerClientEvent('esx:showNotification', _source, _U('no_bread'))
         else
-            TriggerClientEvent("hud:taskBar", _source, 20000, _U('cooking_simple_bun_burger'))
             TriggerClientEvent('esx:showNotification', _source, _U('cooked_simple_bun_burger'))
             TriggerClientEvent('esx_burgershot:StartCookAnimation', _source)
             Citizen.Wait(20000)
@@ -241,7 +240,6 @@ AddEventHandler('bs_burgershotjob:craftingCoktails', function(Value)
         elseif gammaQuantity2 < 1 then
             TriggerClientEvent('esx:showNotification', _source, _U('no_bread'))
         else
-            TriggerClientEvent("hud:taskBar", _source, 25000, _U('cooking_burger'))
             TriggerClientEvent('esx_burgershot:StartCookAnimation', _source)
             Citizen.Wait(25000)
             TriggerClientEvent('esx_burgershot:StopCookAnimation', _source)
@@ -270,7 +268,6 @@ AddEventHandler('bs_burgershotjob:craftingCoktails', function(Value)
         elseif bethQuantity2 < 1 then
             TriggerClientEvent('esx:showNotification', _source, _U('no_gluten_free_bread'))
         else
-            TriggerClientEvent("hud:taskBar", _source, 25000, _U('cooking_veggie_burger'))
             TriggerClientEvent('esx_burgershot:StartCookAnimation', _source)
             Citizen.Wait(25000)
             TriggerClientEvent('esx_burgershot:StopCookAnimation', _source)
@@ -288,7 +285,6 @@ AddEventHandler('bs_burgershotjob:craftingCoktails', function(Value)
         if alephQuantity < 4 then
             TriggerClientEvent('esx:showNotification', _source, _U('need_more_chicken_nuggets'))
         else
-            TriggerClientEvent("hud:taskBar", _source, 20000, _U('cooking_chicken_nuggets'))
             TriggerClientEvent('esx_burgershot:StartCookAnimation', _source)
             Citizen.Wait(20000)
             TriggerClientEvent('esx_burgershot:StopCookAnimation', _source)
@@ -302,7 +298,6 @@ AddEventHandler('bs_burgershotjob:craftingCoktails', function(Value)
         if alephQuantity < 10 then
             TriggerClientEvent('esx:showNotification', _source, _U('need_more_chicken_nuggets'))
         else
-            TriggerClientEvent("hud:taskBar", _source, 20000, _U('cooking_chicken_nuggets'))
             TriggerClientEvent('esx_burgershot:StartCookAnimation', _source)
             Citizen.Wait(20000)
             TriggerClientEvent('esx_burgershot:StopCookAnimation', _source)
@@ -317,7 +312,6 @@ AddEventHandler('bs_burgershotjob:craftingCoktails', function(Value)
         if alephQuantity < 2 then
             TriggerClientEvent('esx:showNotification', _source, _U('need_more_potatoes'))
         else
-            TriggerClientEvent("hud:taskBar", _source, 15000, _U('cooking_fries'))
             TriggerClientEvent('esx_burgershot:StartCookAnimation', _source)
             Citizen.Wait(20000)
             TriggerClientEvent('esx_burgershot:StopCookAnimation', _source)
@@ -332,7 +326,6 @@ AddEventHandler('bs_burgershotjob:craftingCoktails', function(Value)
         if alephQuantity < 1 then
             TriggerClientEvent('esx:showNotification', _source, _U('need_more_tomatoes'))
         else
-            TriggerClientEvent("hud:taskBar", _source, 15000, _U('slicing_tomatoes'))
             TriggerClientEvent('esx_burgershot:StartCookAnimation', _source)
             Citizen.Wait(15000)
             TriggerClientEvent('esx_burgershot:StopCookAnimation', _source)
@@ -347,7 +340,6 @@ AddEventHandler('bs_burgershotjob:craftingCoktails', function(Value)
         if alephQuantity < 2 then
             TriggerClientEvent('esx:showNotification', _source, _U('need_more_lettuce'))
         else
-            TriggerClientEvent("hud:taskBar", _source, 15000, _U('slicing_lettuce'))
             TriggerClientEvent('esx_burgershot:StartCookAnimation', _source)
             Citizen.Wait(15000)
             TriggerClientEvent('esx_burgershot:StopCookAnimation', _source)
@@ -362,7 +354,6 @@ AddEventHandler('bs_burgershotjob:craftingCoktails', function(Value)
         if alephQuantity < 1 then
             TriggerClientEvent('esx:showNotification', _source, _U('need_more_cheese'))
         else
-            TriggerClientEvent("hud:taskBar", _source, 15000, _U('slicing_cheese'))
             TriggerClientEvent('esx_burgershot:StartCookAnimation', _source)
             Citizen.Wait(15000)
             TriggerClientEvent('esx_burgershot:StopCookAnimation', _source)
