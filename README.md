@@ -1,4 +1,4 @@
-#credits
+# Credits
 All Credits go to King Macking he is the creator of the script!
 https://github.com/KingMacking/esx_burgershot
 
