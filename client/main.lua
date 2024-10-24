@@ -171,14 +171,14 @@ end
 function OpenVaultMenu()
 
     local elements = {
-        {label = _U("salad") .. " (x1) -8$", value = 'lettuce'},
+        {label = _U("lettuce") .. " (x1) -8$", value = 'lettuce'},
         {label = _U("tomato") .. " (x1) -8$", value = 'tomato'},
         {label = _U("cheese") .. " (x1) - 20$", value = 'cheese'},
         {label = _U("potato") .. " (x1) - 2$", value = 'potato'},
-        {label = _U("frozen_beef_patty") .. " (x1) - 5$", value = 'fburger'},
-        {label = _U("frozen_veggie_burger") .. " (x1) - 4$", value = 'fvburger'},
+        {label = _U("fburger") .. " (x1) - 5$", value = 'fburger'},
+        {label = _U("fvburger") .. " (x1) - 4$", value = 'fvburger'},
         {label = _U("bread") .. " (x1) - 3$", value = 'bread'},
-        {label = _U("chicken_nugget") .. " (x1) - 1.5$", value = 'nugget'},
+        {label = _U("nugget") .. " (x1) - 1.5$", value = 'nugget'},
         {label = _U("cocacola") .. " (x1) - 3$", value = 'cocacola'},
         {label = _U("water") .. " (x1) - 2$", value = 'water'},
         {label = _U("gluten_free_bread") .. "(x1)- 3$", value = 'vbread'}
@@ -298,15 +298,15 @@ end
 function OpenCozinharMenu()
 
     local elements = {
-        {label = _U("chopped_tomato"), value = 'ctomato'},
-        {label = _U("chopped_lettuce"), value = 'clettuce'},
-        {label = _U("cheese_slice"), value = 'ccheese'},
+        {label = _U("ctomato"), value = 'ctomato'},
+        {label = _U("clettuce"), value = 'clettuce'},
+        {label = _U("ccheese"), value = 'ccheese'},
         {label = _U("simple_burger_bun"), value = 'shamburger'},
         {label = _U("quarter_pounder_with_cheese"), value = 'hamburger'},
         {label = _U("veggie_burger"), value = 'vhamburger'},
         {label = _U("chicken_nuggets_x4"), value = 'nuggets4'},
         {label = _U("chicken_nuggets_x10"), value = 'nuggets10'},
-        {label = _U("fries"), value = 'chips'}
+        {label = _U("chips"), value = 'chips'}
     }
 
     ESX.UI.Menu.CloseAll()
@@ -339,12 +339,10 @@ end
 function ShowLoadingPromt(msg, time, type)
 	CreateThread(function()
 		Wait(0)
-
 		BeginTextCommandBusyspinnerOn('STRING')
 		AddTextComponentSubstringPlayerName(msg)
 		EndTextCommandBusyspinnerOn(type)
 		Wait(time)
-
 		BusyspinnerOff()
 	end)
 end
